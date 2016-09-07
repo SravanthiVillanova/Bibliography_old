@@ -1,5 +1,5 @@
 <?php
-$user = 'root';
+/* $user = 'root';
 $pwd = '';
 $db = 'panta_rhei';
 //$con = new mysqli('VU01339',$user,$pwd,$db);
@@ -8,7 +8,8 @@ if ($con->connect_error) {
     die("unable to connect" . $con->connect_error);
 }
 $ql = "select * from agenttype";
-$result = mysqli_query($con, $ql);
+$result = mysqli_query($con, $ql); */
+require_once 'Learn_db_connection_fetch.php';
 if (mysqli_num_rows($result) > 0) {
     echo "<head>";
     echo "<link media='screen' rel='stylesheet' href='learn_style.css'/link>";
