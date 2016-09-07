@@ -1,0 +1,1 @@
+DELETE FROM workattribute_option WHERE workattribute_id=5 AND id NOT IN (SELECT DISTINCT value FROM work_workattribute WHERE workattribute_id=5)

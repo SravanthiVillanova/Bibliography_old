@@ -1,0 +1,138 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.banner {
+    background-image: URL('../images/banner-back.gif');
+    background-repeat: repeat-x;
+    background-color: #6699CC;
+    height: 67px;
+}
+
+h1 {
+    padding: 10px 5px 2px 5px;
+    margin: 0px;
+    color: #FFFFFF;
+    height: 30px;
+}
+
+div.breadcrumb {
+    line-height: 25px;
+    height: 25px;
+    padding: 0px 10px 0px 10px;   
+}
+
+div.breadcrumb a {
+    color: #003366;
+}
+
+div.breadcrumb a:visited {
+    color: #003366;
+}
+
+div.tabbar {
+    height: 19px;
+    border-bottom: solid 1px #999999;
+    border-top: solid 1px #FFFFFF;
+    background-color: #EEEEEE;
+}
+
+div.tab {
+    margin: 0 0 0 0px;
+    width: 100px;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 3px;
+    background-color: #EEEEEE; 
+    border-bottom: solid 1px #999999; 
+    border-left: solid 1px #FFFFFF; 
+    border-right: solid 1px #999999; 
+}
+
+div.tab img {
+    padding-top: 3px;
+}
+
+
+div.tabbar ul {
+    list-style: none;
+    border: solid 1px #CCCCCC; 
+    margin: 0 0 0 0px;
+    padding: 0 0 0 0px;
+    visibility: hidden;
+    position: absolute;
+    background-color: #FFFFEE;
+    width: 100px;
+}
+
+div.tabbar ul li {
+    padding: 3px;
+    margin-left: 15px;
+}
+
+div.tipbox {
+    width: 200px;
+    border: solid 1px;
+    background-color: #FFFFEE;
+    font-size: 8pt;
+    margin: 20px;
+}
+
+div.tipbox div {
+    font-weight: bold;
+    text-align: center;
+    background-color: #CCCC99;
+}
+
+div.tipbox p {
+    padding: 5px;
+}
+
+ul.tabbar {
+    list-style: none;
+    border-bottom: solid 1px #CCCCCC; 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
+    height: 24px;
+}
+
+ul.tabbar li {
+    background-color: #EEEEEE;
+    border: solid 1px #CCCCCC; 
+    float: left;
+    padding: 0px 5px 0px 5px;
+    height: 23px;
+    line-height: 23px;
+}
+
+ul.tabbar li.active {
+    background-color: #FFFFEE;
+    border-bottom: solid 1px #FFFFEE; 
+}
+
+ul.tabbar li a {
+    text-decoration: none;
+    color: #336699;
+}
+
+ul.tabbar li a:hover {
+    text-decoration: underline;
+}
+
+ul.tabbar li a:visited {
+    color: #336699;
+}
+
+form.tabform {
+    clear: left;
+    background-color: #FFFFEE;
+}
+
+table {
+    font-size: 10pt;
+}
+
+table.form th {
+    text-align: right;
+}

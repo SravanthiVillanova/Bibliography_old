@@ -1,0 +1,153 @@
+<Menu>
+<MenuItem>
+  <Title>Work</Title>
+  <AccessLevel />
+  <Link>
+    <url>work.php?action=showForm</url>
+    <title>New</title>
+  </Link>
+  <Link>
+    <url>work.php?action=showSearch</url>
+    <title>Search</title>
+  </Link>
+  <Link>
+    <url>work.php</url>
+    <title>Manage</title>
+  </Link>
+  <Link>
+    <url>work.php?status=0</url>
+    <title>Review</title>
+  </Link>
+  <Link>
+    <url>work.php?noFolder</url>
+    <title>Classify</title>
+  </Link>
+</MenuItem>
+<MenuItem>
+  <Title>Work Type</Title>
+  <AccessLevel>1</AccessLevel>
+  <Link>
+    <url>worktype.php?action=showForm</url>
+    <title>New</title>
+  </Link>
+  <Link>
+    <url>worktype.php</url>
+    <title>Manage</title>
+  </Link>
+  <Link>
+    <url>worktype.php?action=showAttributes</url>
+    <title>Attributes</title>
+  </Link>
+</MenuItem>
+<MenuItem>
+  <Title>Classification</Title>
+  <AccessLevel>0</AccessLevel>
+  <Link>
+    <url>tree.php?action=showForm</url>
+    <title>New</title>
+  </Link>
+  <Link>
+    <url>tree.php</url>
+    <title>Manage</title>
+  </Link>
+  <Link>
+    <AccessLevel>0</AccessLevel>
+    <url>tree.php?action=showMerge</url>
+    <title>Merge</title>
+  </Link>
+  <Link>
+    <url>tree.php?action=exportList</url>
+    <title>Export List</title>
+  </Link>
+</MenuItem>
+<MenuItem>
+  <Title>Agent</Title>
+  <AccessLevel />
+  <Link>
+    <url>agent.php?action=showForm</url>
+    <title>New</title>
+  </Link>
+  <Link>
+    <url>agent.php?action=showFind</url>
+    <title>Find</title>
+  </Link>
+  <Link>
+    <url>agent.php</url>
+    <title>Manage</title>
+  </Link>
+  <Link>
+    <AccessLevel>0</AccessLevel>
+    <url>agent.php?action=showMerge</url>
+    <title>Merge</title>
+  </Link>
+</MenuItem>
+<MenuItem>
+  <Title>Agent Type</Title>
+  <AccessLevel>1</AccessLevel>
+  <Link>
+    <url>agenttype.php?action=showForm</url>
+    <title>New</title>
+  </Link>
+  <Link>
+    <url>agenttype.php</url>
+    <title>Manage</title>
+  </Link>
+</MenuItem>
+<MenuItem>
+  <Title>Publisher</Title>
+  <AccessLevel />
+  <Link>
+    <url>publisher.php?action=showForm</url>
+    <title>New</title>
+  </Link>
+  <Link>
+    <url>publisher.php?action=showFind</url>
+    <title>Find</title>
+  </Link>
+  <Link>
+    <url>publisher.php</url>
+    <title>Manage</title>
+  </Link>
+  <Link>
+    <AccessLevel>0</AccessLevel>
+    <url>publisher.php?action=showMerge</url>
+    <title>Merge</title>
+  </Link>
+</MenuItem>
+<MenuItem>
+  <Title>Language</Title>
+  <AccessLevel>1</AccessLevel>
+  <Link>
+    <url>language.php?action=showForm</url>
+    <title>New</title>
+  </Link>
+  <Link>
+    <url>language.php</url>
+    <title>Manage</title>
+  </Link>
+</MenuItem>
+<MenuItem>
+  <Title>Users</Title>
+  <AccessLevel>1</AccessLevel>
+  <Link>
+    <url>users.php?action=showForm</url>
+    <title>New</title>
+  </Link>
+  <Link>
+    <url>users.php</url>
+    <title>Manage</title>
+  </Link>
+  <Link>
+    <url>users.php?action=showAccess</url>
+    <title>Access</title>
+  </Link>
+</MenuItem>
+<MenuItem>
+  <Title>Preferences</Title>
+  <AccessLevel />
+  <Link>
+    <url>prefs.php?action=showForm</url>
+    <title>Change Password</title>
+  </Link>
+</MenuItem>
+</Menu>

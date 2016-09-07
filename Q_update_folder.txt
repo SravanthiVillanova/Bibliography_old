@@ -1,0 +1,26 @@
+MySql Queries to update folder table:
+-------------------------------------
+1. Top > Biographie > Milieu > Monde Romain > Culture > please add the 01's  , Culture parent_id = 952
+update `folder` set number = '01' where parent_id = '952' and number = ''
+
+2. Top > Biography > Relations et Sources > Écrivains grecs profanes > add the 01's please
+update `folder` set number = '01' where parent_id = '2488' and number = ''
+
+3. Top > Doctrine > Études générales > Philosophie > please add the 01's
+update `folder` set number = '01' where parent_id = '10597' and number = ''
+
+4. Top > Doctrine > Études générales > Augustinisme. Thomisme > Augustinisme > please add 90000's
+update `folder` set number = '90000' where parent_id = '10714' and number = ''
+
+5. Top > Doctrine > Études générales > Patrologie > please add 01's
+update `folder` set number = '01' where parent_id = '10758' and number = ''
+
+6. Top > Doctrine > De l'homme à Dieu > La révélation divine > Exégèse > please add 90's 
+update `folder` set number = '90' where parent_id = '12576' and number = ''
+
+7. Top > Doctrine > De l'homme à Dieu > Jésus-Christ. Rédemption. sacrements. Église. Grâce. Mariologie > Christologie > please add 01's
+update `folder` set number = '01' where parent_id = '14245' and number = ''
+
+MySql Queries to update workattribute_option table:
+1. Afrikaans [African]  afrikaans
+update `workattribute_option` set title = 'afrikaans' where workattribute_id = '5' and title = 'Afrikaans [African]'

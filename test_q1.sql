@@ -1,0 +1,1 @@
+select ww.work_id, wo.title from work_workattribute ww left join workattribute_option wo on ww.value = wo.id where ww.workattribute_id=5 order by ww.work_id

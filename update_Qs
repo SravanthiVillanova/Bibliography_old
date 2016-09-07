@@ -1,0 +1,457 @@
+1. Merge allemand,.. with other german languages as allemand:
+-----------------------------------------------------------------------
+i. update `work_workattribute` set value = 21849 where work_id in 
+(SELECT work_id FROM `work_workattribute` where value in (10239,22241,17964,7) and `workattribute_id` = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'allemand' where
+id = 21849 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (10239,22241,17964,7) and workattribute_id = 5;
+
+2. Merge Deutsch ; English,.. as allemand - anglais
+----------------------------------------------------
+i. update `work_workattribute` set value = 22195 where work_id = 
+(SELECT work_id FROM `work_workattribute` where value = 18593 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'allemand - anglais' where
+id = 22195 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 18593 and workattribute_id = 5;
+
+3. Merge Deutsch - Latein [German - Latin],.. as allemand - latin
+----------------------------------------------------
+i. update `work_workattribute` set value = 18770 where work_id in 
+(SELECT work_id FROM `work_workattribute` where value in (20216,13864,7685) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'allemand - latin' where
+id = 18770 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (20216,13864,7685) and workattribute_id = 5;
+
+4. Merge Anglais,.. as anglais
+----------------------------------------------------
+i. update `work_workattribute` set value = 21942 where work_id in 
+(select work_id from `work_workattribute` where value in (8879,5) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'anglais' where
+id = 21942 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (8879,5) and workattribute_id = 5;
+
+5. Merge Castillan [Castillian],.. as castillan
+----------------------------------------------------
+i. update `work_workattribute` set value = 18644 where work_id in 
+(select work_id from `work_workattribute` where value = 18645 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'castillan' where
+id = 18644 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 18645 and workattribute_id = 5;
+
+6. Merge Croate [Croatian],.. as croate
+----------------------------------------------------
+i. update `work_workattribute` set value = 6451 where work_id in 
+(select work_id from `work_workattribute` where value = 21473 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'croate' where
+id = 6451 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 21473 and workattribute_id = 5;
+
+7. Merge Danish,.. as danois
+----------------------------------------------------
+i. update `work_workattribute` set value = 6654 where work_id in 
+(select work_id from `work_workattribute` where value = 9754 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'danois' where
+id = 6654 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 9754 and workattribute_id = 5;
+
+8. Merge Espagnol [Spanish],.. as espagnol
+----------------------------------------------------
+i. update `work_workattribute` set value = 8257 where work_id in 
+(select work_id from `work_workattribute` where value in (20,21375) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'espagnol' where
+id = 8257 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (20,21375) and workattribute_id = 5;
+
+9. Merge fran,.. as français
+----------------------------------------------------
+i. update `work_workattribute` set value = 22091 where work_id in 
+(select work_id from `work_workattribute` where value in (21944,5605,6) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'français' where
+id = 22091 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (21944,5605,6) and workattribute_id = 5;
+
+10. Merge French - Latin,.. as français - latin
+----------------------------------------------------
+i. update `work_workattribute` set value = 19042 where work_id in 
+(select work_id from `work_workattribute` where value in (18333,11774) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'français - latin' where
+id = 19042 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (18333,11774) and workattribute_id = 5;
+
+11. Merge Grec [Greek],.. as grec
+----------------------------------------------------
+i. update `work_workattribute` set value = 13768 where work_id in 
+(select work_id from `work_workattribute` where value in (21822,16) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'grec' where
+id = 13768 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (21822,16) and workattribute_id = 5;
+
+12. Merge Hongrois [Hungarian],.. as hongrois
+----------------------------------------------------
+i. update `work_workattribute` set value = 18075 where work_id in 
+(select work_id from `work_workattribute` where value = 5302 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'hongrois' where
+id = 18075 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 5302 and workattribute_id = 5;
+
+13. Merge Indonesian,.. as indonésien
+----------------------------------------------------
+i. update `work_workattribute` set value = 8346 where work_id in 
+(select work_id from `work_workattribute` where value in (21380,18661) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'indonésien' where
+id = 8346 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (21380,18661) and workattribute_id = 5;
+
+14. Merge Italiaans [Italian],.. as italien
+----------------------------------------------------
+i. update `work_workattribute` set value = 12372 where work_id in 
+(select work_id from `work_workattribute` where value in (17,22177,17864,22117,20748) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'italien' where
+id = 12372 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (17,22177,17864,22117,20748) and workattribute_id = 5;
+
+15. Merge Italiano - Latino [Italian - Latin],.. as italien - latin
+----------------------------------------------------
+i. update `work_workattribute` set value = 21901 where work_id in 
+(select work_id from `work_workattribute` where value in (20182,11826) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'italien - latin' where
+id = 21901 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (20182,11826) and workattribute_id = 5;
+
+16. Merge Japanese,.. as japonais
+----------------------------------------------------
+i. update `work_workattribute` set value = 5549 where work_id in 
+(select work_id from `work_workattribute` where value = 8938 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'japonais' where
+id = 5549 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 8938 and workattribute_id = 5;
+
+17. Merge Latin  -English,.. as latin - anglais
+----------------------------------------------------
+i. update `work_workattribute` set value = 18947 where work_id in 
+(select work_id from `work_workattribute` where value = 6583 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'latin - anglais' where
+id = 18947 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 6583 and workattribute_id = 5;
+
+18. Merge Latin - Español [Latin - Spanish],.. as latin - espagnol
+----------------------------------------------------
+i. update `work_workattribute` set value = 21870 where work_id in 
+(select work_id from `work_workattribute` where value = 18863 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'latin - espagnol' where
+id = 21870 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 18863 and workattribute_id = 5;
+
+19. Merge Nederlands [Dutch],.. as néerlandais
+----------------------------------------------------
+i. update `work_workattribute` set value = 4 where work_id in 
+(select work_id from `work_workattribute` where value = 6247 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'néerlandais' where
+id = 4 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 6247 and workattribute_id = 5;
+
+20. Merge Norvégien,.. as norvégien
+----------------------------------------------------
+i. No work ids
+
+ii. update `workattribute_option` set title = 'norvégien' where
+id = 21928 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 55 and workattribute_id = 5;
+
+21. Merge Polonais,.. as polonais
+----------------------------------------------------
+i. update `work_workattribute` set value = 8133 where work_id in 
+(select work_id from `work_workattribute` where value in (6283,21571,21873) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'polonais' where
+id = 8133 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (6283,21571,21873) and workattribute_id = 5;
+
+22. Merge Portugais [Portuguese],.. as portugais
+----------------------------------------------------
+i. update `work_workattribute` set value = 13730 where work_id in 
+(select work_id from `work_workattribute` where value in (21376,5342) and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'portugais' where
+id = 13730 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id in (21376,5342) and workattribute_id = 5;
+
+23. Merge Roumain [Roumanian],.. as roumain
+----------------------------------------------------
+i. update `work_workattribute` set value = 11234 where work_id in 
+(select work_id from `work_workattribute` where value = 5933 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'roumain' where
+id = 11234 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 5933 and workattribute_id = 5;
+
+24. Merge Russe [Russian],.. as russe
+----------------------------------------------------
+i. update `work_workattribute` set value = 10021 where work_id in 
+(select work_id from `work_workattribute` where value = 5373 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'russe' where
+id = 10021 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 5373 and workattribute_id = 5;
+
+25. Merge Serbo-croate [Serbo-Croatian],.. as serbo-croate
+----------------------------------------------------
+i. update `work_workattribute` set value = 11108 where work_id in 
+(select work_id from `work_workattribute` where value = 18591 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'serbo-croate' where
+id = 11108 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 18591 and workattribute_id = 5;
+
+26. Merge Slovène [Slovenian],.. as slovène
+----------------------------------------------------
+i. update `work_workattribute` set value = 9585 where work_id in 
+(select work_id from `work_workattribute` where value = 5401 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'slovène' where
+id = 9585 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 5401 and workattribute_id = 5;
+
+27. Merge Suédois [Swedish],.. as suédois
+----------------------------------------------------
+i. update `work_workattribute` set value = 10407 where work_id in 
+(select work_id from `work_workattribute` where value = 35 and workattribute_id = 5) 
+and workattribute_id = 5;
+
+ii. update `workattribute_option` set title = 'suédois' where
+id = 10407 and workattribute_id = 5;
+
+iii. delete from `workattribute_option` where 
+id = 35 and workattribute_id = 5;
+
+28. Change Afrikaans [African] to afrikaans
+---------------------------------------------
+ii. update `workattribute_option` set title = 'afrikaans' where
+id = 20655 and workattribute_id = 5;
+
+29. Change Arabe [Arabic] to arabe
+---------------------------------------------
+ii. update `workattribute_option` set title = 'arabe' where
+id = 8819 and workattribute_id = 5;
+
+30. Change Catalan [Catalonian] to catalan
+---------------------------------------------
+ii. update `workattribute_option` set title = 'catalan' where
+id = 18056 and workattribute_id = 5;
+
+31. Change Coréan [Korean] to coréan
+---------------------------------------------
+ii. update `workattribute_option` set title = 'coréan' where
+id = 5997 and workattribute_id = 5;
+
+32. Change Deutsch ; English ; Español ; Italiano to allemand - anglais - espagnol - italien
+---------------------------------------------
+ii. update `workattribute_option` set title = 'allemand - anglais - espagnol - italien' where
+id = 21602 and workattribute_id = 5;
+
+33. Change Deutsch, Français [German, French] to allemand - français
+---------------------------------------------
+ii. update `workattribute_option` set title = 'allemand - français' where
+id = 21600 and workattribute_id = 5;
+
+34. Change Dutch - French to néerlandais - français
+---------------------------------------------
+ii. update `workattribute_option` set title = 'néerlandais - français' where
+id = 18949 and workattribute_id = 5;
+
+35. Change English - French to anglais - français
+---------------------------------------------
+ii. update `workattribute_option` set title = 'anglais - français' where
+id = 18727 and workattribute_id = 5;
+
+36. Change English - French - Italian to anglais - français - italien
+---------------------------------------------
+ii. update `workattribute_option` set title = 'anglais - français - italien' where
+id = 21907 and workattribute_id = 5;
+
+37. Change English - Japanese to anglais - japonais
+---------------------------------------------
+ii. update `workattribute_option` set title = 'anglais - japonais' where
+id = 22035 and workattribute_id = 5;
+
+38. Change French - Bulgarian to français - bulgare
+---------------------------------------------
+ii. update `workattribute_option` set title = 'français - bulgare' where
+id = 18602 and workattribute_id = 5;
+
+39. Change Grec [Greek] - Italien [Italian] to grec - italien
+---------------------------------------------
+ii. update `workattribute_option` set title = 'grec - italien' where
+id = 21872 and workattribute_id = 5;
+
+40. Change Greek, Latin, English to grec - italien - anglais
+---------------------------------------------
+ii. update `workattribute_option` set title = 'grec - italien - anglais' where
+id = 21881 and workattribute_id = 5;
+
+41. Change Hébreu [Hebrew] to hébreu
+---------------------------------------------
+ii. update `workattribute_option` set title = 'hébreu' where
+id = 10352 and workattribute_id = 5;
+
+42. Change Icelandais [Icelandic] to islandais
+---------------------------------------------
+ii. update `workattribute_option` set title = 'islandais' where
+id = 21119 and workattribute_id = 5;
+
+43. Change Latein - Mittelhochdeutsch [Latin - Middle High German] to latin - moyen haut-allemand
+---------------------------------------------
+ii. update `workattribute_option` set title = 'latin - moyen haut-allemand' where
+id = 21083 and workattribute_id = 5;
+
+44. Change Latin to latin
+---------------------------------------------
+ii. update `workattribute_option` set title = 'latin' where
+id = 18 and workattribute_id = 5;
+
+45. Change Latin - Dutch to latin - néerlandais
+---------------------------------------------
+ii. update `workattribute_option` set title = 'latin - néerlandais' where
+id = 20665 and workattribute_id = 5;
+
+46. Change Latin  -English to latin - anglais
+---------------------------------------------
+ii. update `workattribute_option` set title = 'latin - anglais' where
+id = 18947 and workattribute_id = 5;
+
+47. Change Latin - Greek to latin - grec
+---------------------------------------------
+ii. update `workattribute_option` set title = 'latin - grec' where
+id = 21890 and workattribute_id = 5;
+
+48. Change Latvian to letton
+---------------------------------------------
+ii. update `workattribute_option` set title = 'letton' where
+id = 21906 and workattribute_id = 5;
+
+49. Change Maltese to maltais
+---------------------------------------------
+ii. update `workattribute_option` set title = 'maltais' where
+id = 5440 and workattribute_id = 5;
+
+50. Change Moyen anglais to moyen anglais
+---------------------------------------------
+ii. update `workattribute_option` set title = 'moyen anglais' where
+id = 21950 and workattribute_id = 5;
+
+51. Change Portuguese - German to portugais - allemand
+---------------------------------------------
+ii. update `workattribute_option` set title = 'portugais - allemand' where
+id = 20512 and workattribute_id = 5;
+
+52. Change Slowaaks [Slovak] to slovaque
+---------------------------------------------
+ii. update `workattribute_option` set title = 'slovaque' where
+id = 11172 and workattribute_id = 5;
+
+53. Change Tchèque [Czech] to tchèque
+---------------------------------------------
+ii. update `workattribute_option` set title = 'tchèque' where
+id = 9959 and workattribute_id = 5;
+
+
+-- SELECT count(*),title FROM `workattribute_option` where `workattribute_id` = 5 group by(title) having count(title) > 1
+-- compare following two queries
+SELECT count(DISTINCT(value)),value FROM `work_workattribute` where `workattribute_id` = 5 group by(value) //returned 53 rows
+SELECT title,id FROM `workattribute_option` where `workattribute_id` = 5                                   //returned 53 rows
