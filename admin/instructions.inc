@@ -9,4 +9,5 @@ $instructions['prefs.php']['handleForm'] = "Enter here your new password (second
 $instructions['language.php']['handleForm'] = "The english words cannot be changed.";
 $instructions['agent.php']['handleDelete'] = "test";
 $instructions['agent.php']['showList'] = "Testing Instructions";
+$instructions['worktype.php']['showAttributes'] = "fsvs";
 ?>
